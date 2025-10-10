@@ -284,4 +284,4 @@ This mid-term report summarized project motivation, objectives, and literature r
 King Saud University – Department of Computer Science
 ---
 
-> *Mid Report – King Saud University, Computer Engineering Department (2025)*
+> *Mid Report – King Saud University, Department of Computer Science (2025)*
