@@ -266,10 +266,10 @@ This mid-term report summarized project motivation, objectives, and literature r
 ---
 
 ## 👥 Team Members  
-- **Saleh Alomair** — *Team Leader / Research & Development Lead*  
-- **Abdulaziz Alqahtani** — *Data Analysis & Modeling*  
-- **Fares Alansi** — *Edge Security & Implementation*  
-- **Mousa Tairi** — *Documentation & System Testing*
+- **Saleh Alomair** — *Team Leader *  
+- **Abdulaziz Alqahtani** —   
+- **Fares Alansi** —  
+- **Mousa Tairi** — 
 
 ---
 
