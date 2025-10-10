@@ -79,10 +79,7 @@ Traditional cybersecurity defenses are reactive, leaving systems exposed and unp
 This project addresses that gap by integrating causal reasoning with AI-driven analysis to enhance proactive detection and response.  
 
 ### 1.2 Goals and Objectives  
-- Apply causal analysis to cybersecurity systems.  
-- Integrate machine learning to improve detection accuracy.  
-- Build explainable models that reveal *why* attacks occur.  
-- Develop a hybrid approach for prevention and early detection.  
+The primary goal of this research is to enhance cybersecurity systems through the application of Causal AI and machine learning, focusing on understanding the underlying causes of security incidents rather than merely detecting correlations or anomalies. This project seeks to apply causal inference techniques to analyze the relationships between network activities and potential threats, enabling a deeper understanding of how specific attacks emerge and propagate. By developing explainable causal models and integrating them with machine learning methods, the research aims to provide transparency in cybersecurity decision-making, offering insights into why and how particular events occur. Additionally, a hybrid causal framework will be designed, combining data from tools such as Wireshark with causal reasoning and machine learning approaches to support proactive threat prevention and early detection. Ultimately, the research aspires to improve the reliability and interpretability of cybersecurity systems by leveraging cause–effect reasoning and intelligent learning models to guide more effective and targeted responses.
 
 ### 1.3 Solution  
 Design a causal AI framework that learns from security data, identifies attack patterns, and explains the cause–effect relationships behind them.  
@@ -98,10 +95,10 @@ The project focuses on combining causal AI with IDS/IPS systems for academic and
 Overview of key network threats, attack vectors, and vulnerabilities that modern organizations face.  
 
 ### 2.2 Introduction to Causal Inference and Causal AI  
-Causal AI uses cause–effect reasoning to understand *why* phenomena occur, not just *what* occurs, allowing more intelligent security responses.  
+In the context of cybersecurity, Causal AI provides a powerful framework for moving beyond traditional correlation-based analytics. While conventional AI models detect patterns or anomalies, they often fail to explain why an event occurred — such as the root cause of a breach or the chain of actions leading to a cyberattack. By leveraging causal inference, Causal AI can model cause-and-effect relationships within complex security systems. This enables more proactive defenses, better threat attribution, and smarter automated responses. Instead of simply reacting to suspicious activity, systems powered by Causal AI can predict potential attack paths, identify underlying vulnerabilities, and propose interventions that directly address the causes rather than the symptoms
 
 ### 2.3 Tools and Technologies Overview  
-Python, DoWhy, CausalNex, Wireshark, and AWS are used to develop and test causal security models.  
+The project utilizes a combination of tools and technologies to develop, test, and deploy causal cybersecurity models. Python serves as the primary programming language due to its extensive libraries and flexibility for data analysis and modeling. DoWhy and CausalNex are employed to perform causal inference and construct causal graphs, enabling the identification of cause–effect relationships within network events. Wireshark is used for capturing and analyzing network traffic, providing real-world data for testing causal models. Finally, AWS (Amazon Web Services) offers a scalable cloud environment for data storage, computation, and deployment of the developed models, ensuring efficient and secure experimentation.  
 
 ### 2.4 Risk Assessment and Governance (RAG)  
 Integration of risk evaluation and mitigation within AI-driven security decision-making.  
