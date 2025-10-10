@@ -281,8 +281,7 @@ This mid-term report summarized project motivation, objectives, and literature r
 
 ### 🧑‍🏫 Supervised by
 **Dr. Maher Alhossaini**  
-King Saud University – Computer Engineering Department
-
+King Saud University – Department of Computer Science
 ---
 
 > *Mid Report – King Saud University, Computer Engineering Department (2025)*
