@@ -231,7 +231,52 @@ as each layer compensates for others’ blind spots and adapts to dynamic attack
 Discuss how causal inference has been applied in non-security contexts (healthcare, economics, social science) and its potential adaptation for cybersecurity.  
 
 ### 3.3 Cybersecurity + Causal AI Projects  
-Review emerging research integrating causal AI with threat detection and anomaly analysis.  
+
+3.3.1  About the Causal Model Applied in Cybersecurity:
+
+Cybersecurity is a very important field that has many roles, including detecting any suspicious activities, like unauthorized access and ransomware, etc. It is great to make progress in a field like Cybersecurity because of its importance in our current world; without any security, with any vulnerability will be exploited, causing loss of data and large financial and as mentioned above, Cybersecurity is one of the applications causal model, which aims at causal analysis in cyber-attacks such as phishing and data breaches, and so on … rather than aiming at association factors, which provides smart analysis and prediction for incoming attacks that helps the security team to response and counter attacks at early stages or before they occur rather than waiting occur attacks to deal with it which leads increasing of opportunity in counter attack .
+
+
+3.3.2  Previous Paper Related to the Causal Model Applied in Cybersecurity :
+
+We searched a lot of papers till we found the closest paper to our topic, that named "Application of Causal Modeling in Cybersecurity" and was published in June 2020 in a journal. 
+
+
+3.3.2.1  Introduction to this paper :
+
+The researchers of this paper explained how to apply the causal model in cybersecurity and tried to understand why cyber-attacks happened, and spot the difference between Statistical analysis and Causal analysis. The statistical analysis predicts the outcome based on correlation and doesn't care about causality. The objective of this paper is to rate the risk of data breaches in cybersecurity and to determine the relationship between the data. They used a VERIS Community Database (VCDB), " which is an open-sourced database consisting of a real log for attacks that occurred" as the main source data to build up a causal model.  
+
+
+3.3.2.2 Findings of this paper:
+
+They used six types of attacks (Social, Physical, Misuse, Malware, Hacking, Error) from a (VCDB) to test them in terms of (Time Discovery and Record Lost).
+
+
+Figure 7  shows the causal estimates of the six cybersecurity actions (Social, Physical, Misuse, Malware, Hacking, and Error) on the outcome variable Records Lost.
+ Each bar in the figure represents the estimated causal effect of that specific action on the number of records lost during a data breach.
+
+As you can see, Hacking has the highest positive causal estimate, indicating that it is the most significant impact that causes data loss among all attack types. unlike the remaining actions (Social, Physical, Misuse, Malware, and Error) show a weak impact for Records lost .
+
+By using refuters that verify the accuracy of the model, such as a " random common cause" which means adding a random variable to the model to check whether the result is the same or different, and there is another type called a "Placebo" which replaces a random variable with a causal variable to check if it gives the same result or not, and finally "Data Subset" rather than taking the whole dataset we take a part of it and test the model again to check accuracy of model, same thing applied to another for Discovery Time.
+
+
+Figure 6 shows the causal estimates of six different cyberattack actions (Social, Physical, Misuse, Malware, Hacking, and Error) on the outcome variable Discovery Time.
+From the results, Physical, Misuse, and Hacking actions demonstrate positive causal estimates, indicating that these types of attacks are associated with longer discovery times.
+Unlike Social and Error actions show negative causal estimates, meaning these incidents are typically discovered more quickly.
+In general, the figure indicates that certain attack types—especially Hacking and Misuse have a stronger causal impact for late detection, whereas the others can be detected easily .
+
+
+    3.3.2.3 Limitations of this paper: 
+
+    - The dataset is biased and was taken from the VERIS Community Database (VCDB), which only contains records of organizations that have already experienced data breaches, so the dataset lacks examples of companies that have not been breached, introducing a bias.
+
+
+- The study focuses on one field ( healthcare ) the findings may not be generalized to other fields; in other words, we don't know if the outcomes will be applied to other organizations.
+
+
+
+
+  
 
 ### 3.4 Summary and Gaps in Current Research  
 Identify what current systems lack and how your approach fills the gap.  
