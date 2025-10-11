@@ -234,12 +234,12 @@ Discuss how causal inference has been applied in non-security contexts (healthca
 
  3.3.1  About the Causal Model Applied in Cybersecurity:
 
-         Cybersecurity is a very important field that has many roles, including detecting any suspicious activities, like unauthorized access and ransomware, etc. It is great to make progress in a field like Cybersecurity because of its importance in our current world; without any security, with any vulnerability will be exploited, causing loss of data and large financial and as mentioned above, Cybersecurity is one of the applications causal model, which aims at causal analysis in cyber-attacks such as phishing and data breaches, and so on … rather than aiming at association factors, which provides smart analysis and prediction for incoming attacks that helps the security team to response and counter attacks at early stages or before they occur rather than waiting occur attacks to deal with it which leads increasing of opportunity in counter attack.     
+Cybersecurity is a very important field that has many roles, including detecting any suspicious activities, like unauthorized access and ransomware, etc. It is great to make progress in a field like Cybersecurity because of its importance in our current world; without any security, with any vulnerability will be exploited, causing loss of data and large financial and as mentioned above, Cybersecurity is one of the applications causal model, which aims at causal analysis in cyber-attacks such as phishing and data breaches, and so on … rather than aiming at association factors, which provides smart analysis and prediction for incoming attacks that helps the security team to response and counter attacks at early stages or before they occur rather than waiting occur attacks to deal with it which leads increasing of opportunity in counter attack.     
 
 
 3.3.2  Previous Paper Related to the Causal Model Applied in Cybersecurity :
 
-        We searched a few papers related to our project in order to understand the topic very well and compare them with our work .
+We searched a few papers related to our project in order to understand the topic very well and compare them with our work .
 
 3.3.2.1   Application of Causal Modeling in Cybersecurity paper :   
 
@@ -267,7 +267,7 @@ From the results, Physical, Misuse, and Hacking actions demonstrate positive cau
 Unlike Social and Error actions show negative causal estimates, meaning these incidents are typically discovered more quickly.
 In general, the figure indicates that certain attack types—especially Hacking and Misuse have a stronger causal impact for late detection, whereas the others can be detected easily . 
 
-      3.3.2.1.3 Limitations of this paper:
+    3.3.2.1.3 Limitations of this paper:
 
 - The dataset is biased and was taken from the VERIS Community Database (VCDB), which only contains records of organizations that have already experienced data breaches, so the dataset lacks examples of companies that have not been breached, introducing a bias.
 
