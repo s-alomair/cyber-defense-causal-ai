@@ -239,7 +239,7 @@ Discuss how causal inference has been applied in non-security contexts (healthca
 
 3.3.2  Previous Paper Related to the Causal Model Applied in Cybersecurity :
 
-          We searched a few papers related to our project in order to understand the topic very well and compare them with our work .
+        We searched a few papers related to our project in order to understand the topic very well and compare them with our work .
 
 3.3.2.1   Application of Causal Modeling in Cybersecurity paper :   
 
