@@ -249,7 +249,8 @@ We searched a few papers related to our project in order to understand the topic
 
 The researchers of this paper explained how to apply the causal model in cybersecurity and tried to understand why cyber-attacks happened, and spot the difference between Statistical analysis and Causal analysis. The statistical analysis predicts the outcome based on correlation and doesn't care about causality. The objective of this paper is to rate the risk of data breaches in cybersecurity and to determine the relationship between the data. They used a VERIS Community Database (VCDB), " which is an open-sourced database consisting of a real log for attacks that occurred" as the main source data to build up a causal model.  
 
-3.3.2.1.2 Findings of this paper
+3.3.2.1.2 Findings of this paper :
+
 They used six types of attacks (Social, Physical, Misuse, Malware, Hacking, Error) from a (VCDB) to test them in terms of (Time Discovery and Record Lost).
 
 Figure 7  shows the causal estimates of the six cybersecurity actions (Social, Physical, Misuse, Malware, Hacking, and Error) on the outcome variable Records Lost.
@@ -279,11 +280,12 @@ In general, the figure indicates that certain attack types—especially Hacking 
 
   3.3.2.2 Developing Optimal Causal Cyber-Defence Agents via Cyber Security Simulation paper : 
 
-3.3.2.2.1 Introduction to this paper :  
+3.3.2.2.1 Introduction to this paper : 
+
 This paper explained how to use causal AI to protect the system from electronic attacks in an efficient way. The researchers said that the attacks became more sophisticated compared to cyber-defense, so they suggested using two ways to enhance the cyber-defense response: First, Reinforcement Learning which the machine learns new attacks based on its history (Experiment), and second, Causal AI, which aims to figure out why the attack occurred, so they focused more on the second method to help them know the relations between events, and this paper present DCBO (Dynamic Causal Bayesian Optimization) which is an algorithm that finds the best intervention at any moment on the network. Finally, the experiments are done by using Yawning Titan, which is a simulator developed in the U.K. Government to simulate attacks and defenses in a real environment.  
 
-3.3.2.2.2 Findings of this paper : 
 
+3.3.2.2.2 Findings of this paper : 
 
 
 This Figure shows the performance of three optimization methods, DCBO (Dynamic Causal Bayesian Optimization), CBO (Causal Bayesian Optimization), and BO (Bayesian Optimization) applied to the Yawning Titan (YT) cyber defense simulator. The x-axis represents the cumulative cost of interventions, whereas the y-axis represents the expected outcome or performance of the intervention, and the shaded areas indicate one standard deviation around the mean, while the black dotted line shows the true optimal response value. As seen in this figure, DCBO and CBO are more effective than BO in enhancing decisions of cyber-defense, because the DCBO and CBO focus on causality, which makes taking decisions faster, unlike the BO just focuses on improving performance.  
