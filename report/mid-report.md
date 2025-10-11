@@ -78,13 +78,15 @@ Overall, the project emphasizes the shift from reaction to prevention.
 Traditional cybersecurity defenses are reactive, leaving systems exposed and unprepared for sophisticated and evolving attacks.  
 This project addresses that gap by integrating causal reasoning with AI-driven analysis to enhance proactive detection and response.  
 
-### 1.2 Goals and Objectives  
+### 1.2 Project Motivation and Importance
+
+### 1.3 Goals and Objectives  
 The primary goal of this research is to enhance cybersecurity systems through the application of Causal AI and machine learning, focusing on understanding the underlying causes of security incidents rather than merely detecting correlations or anomalies [9][10]. This project seeks to apply causal inference techniques to analyze the relationships between network activities and potential threats, enabling a deeper understanding of how specific attacks emerge and propagate [11]. By developing explainable causal models and integrating them with machine learning methods, the research aims to provide transparency in cybersecurity decision-making, offering insights into why and how particular events occur [10][12]. Additionally, a hybrid causal framework will be designed, combining data from tools such as Wireshark with causal reasoning and machine learning approaches to support proactive threat prevention and early detection [14][15]. Ultimately, the research aspires to improve the reliability and interpretability of cybersecurity systems by leveraging cause–effect reasoning and intelligent learning models to guide more effective and targeted responses [9][11].
 
-### 1.3 Solution  
+### 1.4 Solution  
 Design a causal AI framework that learns from security data, identifies attack patterns, and explains the cause–effect relationships behind them.  
 
-### 1.4 Research Scope  
+### 1.5 Research Scope  
 The project focuses on combining causal AI with IDS/IPS systems for academic and experimental use.  
 
 ---
