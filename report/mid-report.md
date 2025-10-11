@@ -267,7 +267,7 @@ From the results, Physical, Misuse, and Hacking actions demonstrate positive cau
 Unlike Social and Error actions show negative causal estimates, meaning these incidents are typically discovered more quickly.
 In general, the figure indicates that certain attack types—especially Hacking and Misuse have a stronger causal impact for late detection, whereas the others can be detected easily . 
 
-    3.3.2.1.3 Limitations of this paper:
+3.3.2.1.3 Limitations of this paper:
 
 - The dataset is biased and was taken from the VERIS Community Database (VCDB), which only contains records of organizations that have already experienced data breaches, so the dataset lacks examples of companies that have not been breached, introducing a bias.
 
