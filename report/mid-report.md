@@ -233,81 +233,59 @@ Discuss how causal inference has been applied in non-security contexts (healthca
 
 ### 3.3 Cybersecurity + Causal AI Projects  
 
- 3.3.1  About the Causal Model Applied in Cybersecurity:
-
-Cybersecurity is a very important field that has many roles, including detecting any suspicious activities, like unauthorized access and ransomware, etc. It is great to make progress in a field like Cybersecurity because of its importance in our current world; without any security, with any vulnerability will be exploited, causing loss of data and large financial and as mentioned above, Cybersecurity is one of the applications causal model, which aims at causal analysis in cyber-attacks such as phishing and data breaches, and so on … rather than aiming at association factors, which provides smart analysis and prediction for incoming attacks that helps the security team to response and counter attacks at early stages or before they occur rather than waiting occur attacks to deal with it which leads increasing of opportunity in counter attack.     
-
-
-3.3.2  Previous Paper Related to the Causal Model Applied in Cybersecurity :
-
-We searched a few papers related to our project in order to understand the topic very well and compare them with our work .
-
-3.3.2.1   Application of Causal Modeling in Cybersecurity paper :   
-
-
-
-3.3.2.1.1  Introduction to this paper :
-
-The researchers of this paper explained how to apply the causal model in cybersecurity and tried to understand why cyber-attacks happened, and spot the difference between Statistical analysis and Causal analysis. The statistical analysis predicts the outcome based on correlation and doesn't care about causality. The objective of this paper is to rate the risk of data breaches in cybersecurity and to determine the relationship between the data. They used a VERIS Community Database (VCDB), " which is an open-sourced database consisting of a real log for attacks that occurred" as the main source data to build up a causal model.  
-
-3.3.2.1.2 Findings of this paper :
-
-They used six types of attacks (Social, Physical, Misuse, Malware, Hacking, Error) from a (VCDB) to test them in terms of (Time Discovery and Record Lost).
-
-Figure 7  shows the causal estimates of the six cybersecurity actions (Social, Physical, Misuse, Malware, Hacking, and Error) on the outcome variable Records Lost.
- Each bar in the figure represents the estimated causal effect of that specific action on the number of records lost during a data breach.
-As you can see, Hacking has the highest positive causal estimate, indicating that it is the most significant impact that causes data loss among all attack types. Unlike the remaining actions (Social, Physical, Misuse, Malware, and Error) show a weak impact for Records lost.
-
-By using refuters that verify the accuracy of the model, such as a " random common cause" which means adding a random variable to the model to check whether the result is the same or different, and there is another type called a "Placebo" which replaces a random variable with a causal variable to check if it gives the same result or not, and finally "Data Subset" rather than taking the whole dataset we take a part of it and test the model again to check accuracy of model, same thing applied to another for Discovery Time.
-
-
-
-
-
-Figure 6 shows the causal estimates of six different cyberattack actions (Social, Physical, Misuse, Malware, Hacking, and Error) on the outcome variable Discovery Time.
-From the results, Physical, Misuse, and Hacking actions demonstrate positive causal estimates, indicating that these types of attacks are associated with longer discovery times.
-Unlike Social and Error actions show negative causal estimates, meaning these incidents are typically discovered more quickly.
-In general, the figure indicates that certain attack types—especially Hacking and Misuse have a stronger causal impact for late detection, whereas the others can be detected easily . 
-
-3.3.2.1.3 Limitations of this paper:
-
-- The dataset is biased and was taken from the VERIS Community Database (VCDB), which only contains records of organizations that have already experienced data breaches, so the dataset lacks examples of companies that have not been breached, introducing a bias.
-
-
-- The study focuses on one field ( healthcare ) the findings may not be generalized to other fields; in other words, we don't know if the outcomes will be applied to other organizations.
-
-
-
-
-  3.3.2.2 Developing Optimal Causal Cyber-Defence Agents via Cyber Security Simulation paper : 
-
-3.3.2.2.1 Introduction to this paper : 
-
-This paper explained how to use causal AI to protect the system from electronic attacks in an efficient way. The researchers said that the attacks became more sophisticated compared to cyber-defense, so they suggested using two ways to enhance the cyber-defense response: First, Reinforcement Learning which the machine learns new attacks based on its history (Experiment), and second, Causal AI, which aims to figure out why the attack occurred, so they focused more on the second method to help them know the relations between events, and this paper present DCBO (Dynamic Causal Bayesian Optimization) which is an algorithm that finds the best intervention at any moment on the network. Finally, the experiments are done by using Yawning Titan, which is a simulator developed in the U.K. Government to simulate attacks and defenses in a real environment.  
-
-
-3.3.2.2.2 Findings of this paper : 
-
-
-This Figure shows the performance of three optimization methods, DCBO (Dynamic Causal Bayesian Optimization), CBO (Causal Bayesian Optimization), and BO (Bayesian Optimization) applied to the Yawning Titan (YT) cyber defense simulator. The x-axis represents the cumulative cost of interventions, whereas the y-axis represents the expected outcome or performance of the intervention, and the shaded areas indicate one standard deviation around the mean, while the black dotted line shows the true optimal response value. As seen in this figure, DCBO and CBO are more effective than BO in enhancing decisions of cyber-defense, because the DCBO and CBO focus on causality, which makes taking decisions faster, unlike the BO just focuses on improving performance.  
-
-
-3.3.2.2.3 Limitation of this paper : 
-
-- The experiments are done by the Yawning Titan Simulator to avoid realistic risks, so the results could not reflect all possible problems on a real Network.
+ 3.3.1 Overview
  
- 
-- Constructing a DAG (Directed Acyclic Graph) in a real Network isn't easy, because not the same as the Yawning Titan Simulator; everything is visible, unlike, real Network, it might be a new attack appeared .
+In recent years, researchers have started combining Causal Artificial Intelligence (Causal AI) with cybersecurity to make detection systems more explainable and proactive. Traditional AI and ML-based systems can identify suspicious patterns, but they often fail to explain why the attack occurred or what factors led to it [9], [10]. This lack of transparency makes it difficult for analysts to trust AI-based alerts or improve system rules.
+Causal AI, on the other hand, focuses on understanding the cause-and-effect relationships within network data. By identifying how different events lead to attacks, it helps in explaining the reasons behind alerts, predicting future threats, and improving defense decisions [9], [12]. Several research projects, including work by the Alan Turing Institute, highlighted that causal reasoning can connect attacker behaviors and system responses in a logical sequence, allowing faster threat attribution and more explainable detection [9].  
+
+
+
+3.3.2 Causal Modeling in Cybersecurity
+
+Causal modeling provides a framework for understanding how one factor influences another in a cyber environment. Unlike correlation-based approaches that only show patterns, causal analysis identifies which actions directly lead to a threat [7].
+ One study applied causal modeling to the VERIS Community Database (VCDB), which contains real-world breach incidents [7]. The authors analyzed six types of attacks (such as hacking, misuse, and malware) to measure their causal impact on two outcomes: the number of records lost and the time it took to detect the breach. Figure 4 presents the causal model developed by Lin and Banitaan [7], which was constructed using data from the VCDB dataset. The model shows how different attack categories — including malware, hacking, physical, and misuse — influence the discovery time and the resulting records lost. This visualization highlights how causal modeling helps in identifying the key relationships between attack types and breach consequences.
 
 
 
 
 
+Figure 4: Causal model of cybersecurity incidents showing the relationships between attack types, discovery time, and data loss. Adapted from Lin and Banitaan (2020) [7].
+Their results showed that hacking had the strongest causal effect on record loss, while misuse and physical attacks increased detection time. This study proved that causal analysis can reveal the most harmful attack factors, which is useful for prioritizing defense strategies.
+ For this project, the same concept can be used but focused on network alerts (IDS data) instead of general breach outcomes — identifying which network behaviors are the main causes of an alert.
+
+
+3.3.3 Causal Defense Optimization and Simulation
+
+Another important work was presented by Spillard and Dhir (2022), who developed a simulation-based approach using Dynamic Causal Bayesian Optimization (DCBO) [8]. They combined causal reasoning with reinforcement learning to create an intelligent agent that can automatically defend a network under attack. The model was tested in the Yawning Titan simulator and showed that causal reasoning helps the system decide the best defensive action at the right time.
+ For example, the model could evaluate possible actions such as blocking a port or isolating a host and predict how each action would affect the success of the attack. The results showed that causal-based decisions reduced attack impact compared to traditional methods [8].
+ This approach supports the idea of integrating causal analysis not only to detect threats but also to guide intrusion prevention (IPS) decisions, which aligns with the future goal of this project.
+
+
+3.3.4 Explainable IDS using Causal AI
+
+Recent research has also explored using causal inference directly inside Intrusion Detection Systems (IDS). A study published in 2025 proposed an explainable IDS framework that uses Structural Causal Models (SCM) to link network behavior and alerts [10]. The system could explain why an alert was triggered by identifying which network variables caused it — for example, unusual packet size or abnormal communication frequency.
+ This method improved both accuracy and trust: the system achieved high detection performance while also providing human-understandable explanations for each alert [10]. The study also showed that causal analysis helps reduce false positives, because it distinguishes between events that are truly related to attacks and those that just look suspicious.
+ This kind of explainable IDS directly supports the goals of our project — combining detection accuracy with clear reasoning and interpretation.
+
+
+3.3.5 Challenges and Limitations
+
+Although current research shows promising results, there are still challenges when applying causal AI to cybersecurity. Many studies were tested only in controlled or simulated environments, so results may not generalize to real-world networks [7], [8].
+ Another limitation is the data bias. For example, the VCDB dataset used in [7] includes only organizations that were already attacked, which limits the diversity of data and can affect causal accuracy. Also, building a causal model requires expert knowledge to correctly define relationships between variables, and missing one important factor can change the results.
+ In practical systems, integrating causal models in real-time detection tools may also face computational challenges. However, as tools like DoWhy and CausalNex improve [13], applying these models in cybersecurity environments becomes more feasible.
 
 
 
+3.3.6 Summary
 
-  
+The reviewed studies demonstrate that integrating causal reasoning into cybersecurity can make threat detection systems smarter, more interpretable, and proactive.
+- The study on data breaches [7] proved that causal analysis can reveal which attack types cause the most serious outcomes.
+- The DCBO framework [8] showed that causal decision-making can improve active defense responses.
+-Research on explainable IDS [10] demonstrated that causal AI can make alert interpretation clearer and reduce false positives.
+ Together, these works confirm that combining causal inference with traditional AI provides a deeper understanding of threats and helps analysts take faster, more informed actions.
+ This project builds on these findings by integrating causal inference with network-based IDS data. The goal is to identify the real causes behind alerts and simulate how preventive actions (IPS layer) can stop attacks before they spread.
+ By linking detection and prevention through causal reasoning, the system can move from reactive defense to explainable and proactive cybersecurity [7].
+
 
 ### 3.4 Summary and Gaps in Current Research  
 Identify what current systems lack and how your approach fills the gap.  
