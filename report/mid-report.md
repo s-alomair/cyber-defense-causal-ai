@@ -87,7 +87,8 @@ The primary goal of this research is to enhance cybersecurity systems through th
 Design a causal AI framework that learns from security data, identifies attack patterns, and explains the cause–effect relationships behind them.  
 
 ### 1.5 Research Scope  
-The project focuses on combining causal AI with IDS/IPS systems for academic and experimental use.  
+The scope of this project is to create a causal-based machine learning framework that will improve cybersecurity systems by determining the root causes of security events instead of merely looking for trends or abnormalities. Using information from tools like Wireshark and Intrusion Detection Systems (IDS), the study uses causal inference techniques to examine connections between network behaviors and security alerts. The project aims to develop more transparent and explicable detection models that facilitate proactive threat prevention and early response by fusing machine learning and causal reasoning.
+However, outside of the project's purview, the model solely relies on correlation and will only address specific network behaviors and attack patterns, not all potential forms of cyberattacks. Lastly,  The project does have certain limitations, though, such as limited access to real-world datasets, the possibility of missing values or data noise, and the challenge of simulating intricate and dynamic cyberattack patterns. Furthermore, because the majority of the experiments will be conducted using simulated or publicly accessible data, the framework might need a lot of processing power and might not generalize completely across various network environments.
 
 ---
 
